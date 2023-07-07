@@ -14,6 +14,10 @@
     color: aliceblue;
 }
 
+.color-3 {
+    /* background: linear-gradient(to bottom, #800000, #FFFFFF); */
+}
+
 .nav-item:hover::after {
     border-radius: 50px;
     content: "";

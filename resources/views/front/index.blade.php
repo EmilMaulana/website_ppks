@@ -26,13 +26,13 @@
     </div>
 </section>
 <section id="about" class="">
-    <div class="about-section">
+    <div class="about-section color-3">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6">
                     <div class="about-img-wrapper">
                         <div class="about-img position-relative d-inline-block wow fadeInLeft" data-wow-delay=".3s">
-                            <img src="{{ asset('assets/img/image-36.png') }}" alt="">
+                            <img src="{{ asset('assets/img/image-36.png') }}" class="img-fluid rounded-end" alt="">
 
                             <div class="about-experience color-1">
                                 <h3>5 Year Of Working Experience</h3>
@@ -92,80 +92,123 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="service-box box-style">
+            <div class="col-lg-4 col-md-6 ">
+                <div class="service-box box-style shadow" style="height: 400px">
                     <div class="service-icon box-icon-style">
-                        <i class="lni lni-leaf"></i>
+                        <i class="lni lni-flag"></i>
                     </div>
                     <div class="box-content-style service-content">
-                        <h4>Clean & Refreshing</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <h4>Kampanye Kesadaran</h4>
+                        <p>Program ini bertujuan untuk meningkatkan kesadaran dan pemahaman mengenai kekerasan seksual di kalangan mahasiswa dan masyarakat kampus. </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="service-box box-style">
+                <div class="service-box box-style shadow" style="height: 400px">
                     <div class="service-icon box-icon-style">
                         <i class="lni lni-home"></i>
                     </div>
                     <div class="box-content-style service-content">
-                        <h4>Solid</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <h4>Pelatihan Pendidikan Seksualitas</h4>
+                        <p>Program ini memberikan pelatihan dan pendidikan mengenai seksualitas yang sehat, persetujuan, batasan pribadi, dan mengenali tanda-tanda kekerasan seksual. </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="service-box box-style">
+                <div class="service-box box-style shadow" style="height: 400px">
                     <div class="service-icon box-icon-style">
                         <i class="lni lni-briefcase"></i>
                     </div>
                     <div class="box-content-style service-content">
-                        <h4>Crafted for Business</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <h4>Layanan Konseling dan Pendampingan</h4>
+                        <p>Program ini menyediakan layanan konseling dan pendampingan bagi korban kekerasan seksual. Tim yang terlatih dan sensitif akan membantu korban dalam proses pemulihan.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="service-box box-style">
+                <div class="service-box box-style shadow" style="height: 420px">
                     <div class="service-icon box-icon-style">
                         <i class="lni lni-bolt"></i>
                     </div>
                     <div class="box-content-style service-content">
-                        <h4>Speed Optimized</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <h4>Sistem Pelaporan Aduan</h4>
+                        <p>Program ini membangun sistem pelaporan aduan yang aman dan terpercaya bagi korban kekerasan seksual. Sistem ini dapat diakses melalui platform online atau melalui saluran komunikasi yang disediakan oleh satuan tugas.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="service-box box-style">
+                <div class="service-box box-style shadow" style="height: 420px">
                     <div class="service-icon box-icon-style">
                         <i class="lni lni-infinite"></i>
                     </div>
                     <div class="box-content-style service-content">
-                        <h4>Fully Customizable</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <h4>Penegakan Aturan dan Sanksi</h4>
+                        <p>Satuan tugas bekerja sama dengan pihak berwenang kampus untuk memastikan bahwa pelaku kekerasan seksual dihadapkan pada konsekuensi hukuman yang sesuai.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="service-box box-style">
+                <div class="service-box box-style shadow" style="height: 420px">
                     <div class="service-icon box-icon-style">
                         <i class="lni lni-reload"></i>
                     </div>
                     <div class="box-content-style service-content">
-                        <h4>Regular Updates</h4>
-                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt
-                            labor dolore magna.</p>
+                        <h4>Kolaborasi dengan Komunitas Luar</h4>
+                        <p>Program ini melibatkan kolaborasi dengan komunitas luar, seperti LSM atau lembaga advokasi, untuk meningkatkan kesadaran dan memberikan dukungan bagi korban kekerasan seksual.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<section id="team" class="contact-section cta-bg img-bg mt-5 mb-5 pt-110 pb-100" style="background-image: url({{asset('assets/img/slide-bg.png')}});">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-7 col-lg-7">
+                <div class="section-title mb-60">
+                    <span class="text-white wow fadeInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;"></span>
+                    <h2 class="text-white wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">" Bersama Mencegah, Bersama Mengatasi "</h2>
+                    <p class="text-white wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual Universitas Singaperbangsa Karawang.</p>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5">
+                <div class="contact-btn text-left text-lg-right">
+                    <a href="https://rebrand.ly/fancy-ud" rel="nofollow" class="btn btn color-1 text-white pt-3 pb-3 pl-5 pr-5 rounded-pill">Lapor Sekarang!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================= client-logo-section start ========================= -->
+<section class="client-logo-section pt-100 pb-100">
+    <div class="container">
+        <div class="client-logo-wrapper">
+            <div class="client-logo-carousel d-flex align-items-center justify-content-between">
+                <div class="client-logo">
+                    <img src="{{asset('assets/img/logo-unsika.png')}}" alt="" style="width: 100px; height: 100px">
+                </div>
+                <div class="client-logo">
+                    <img src="{{asset('assets/img/main-logo.png')}}" alt="" style="">
+                </div>
+                <div class="client-logo">
+                    <img src="{{asset('assets/img/logo-fasilkom.png')}}" alt="" style="width: 100px; height: 100px">
+                </div>
+                {{-- <div class="client-logo">
+                    <img src="assets/img/client-logo/lineicons-logo.svg" alt="">
+                </div>
+                <div class="client-logo">
+                    <img src="assets/img/client-logo/graygrids-logo.svg" alt="">
+                </div>
+                <div class="client-logo">
+                    <img src="assets/img/client-logo/lineicons-logo.svg" alt="">
+                </div> --}}
+            </div>
+        </div>
+    </div>
+</section>
+
 
 @endsection

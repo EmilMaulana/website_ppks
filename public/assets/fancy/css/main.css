@@ -339,7 +339,7 @@ p {
       height: 100%;
       border-style: solid;
       /* Spinner Color */
-      border-color: #3763EB #3763EB #F4EEFB;
+      border-color: #800000 #800000 #F4EEFB;
       border-radius: 50%;
       border-width: 6px; }
     .preloader .loader .ytp-spinner-left .ytp-spinner-circle {
@@ -1181,7 +1181,7 @@ p {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #800000;
     z-index: 9;
     -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
@@ -1196,7 +1196,7 @@ p {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #800000;
     z-index: 9;
     -webkit-box-shadow: 0px 15px 20px 0px rgba(5, 20, 65, 0.1);
     -moz-box-shadow: 0px 15px 20px 0px rgba(5, 20, 65, 0.1);
@@ -1297,7 +1297,7 @@ p {
       top: 0; }
   .navbar-nav .nav-item .sub-menu {
     min-width: 200px;
-    background-color: #fff;
+    background-color: #800000;
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -1317,7 +1317,7 @@ p {
     .navbar-nav .nav-item .sub-menu::after {
       content: '';
       position: absolute;
-      background: #fff;
+      background: #800000;
       width: 20px;
       height: 20px;
       top: -10px;
@@ -1402,7 +1402,7 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 100%, #000000 100%); }
+      background: linear-gradient(to right, rgba(46, 27, 27, 0.596) 100%, #800000 100%); }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
       margin-bottom: 25px; }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
@@ -1873,7 +1873,7 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: linear-gradient(to left, rgba(111, 88, 232, 0.18) 0%, #3763eb 100%); }
+      background: linear-gradient(to left, rgba(199, 14, 14, 0.425) 0%, #800000 100%); }
   .contact-section .contact-item-wrapper .contact-item {
     display: flex;
     border: 1px solid #F4EEFB;

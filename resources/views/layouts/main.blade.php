@@ -73,10 +73,10 @@
                         </ul>
                         <div class="navbar-nav ">
                             <li class="nav-item">
-                                <a class="page-scroll text-white" href="#services">Login</a>
+                                <a class=" text-white" href="{{ route('register') }}">Sign in</a>
                             </li>
                             <li class="nav-item">
-                                <a class="page-scroll text-white" href="#portfolio">Sign Up</a>
+                                <a class=" text-white" href="{{ route('login') }}">Sign Up</a>
                             </li>
                         </div>
                     </div> 
@@ -91,7 +91,7 @@
         <!-- ========================= subscribe-section end ========================= -->
 
         <!-- ========================= footer start ========================= -->
-        <footer class="footer pt-100 color-1">
+        <footer class="footer pt-100 color-1 mt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
