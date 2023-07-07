@@ -5,8 +5,8 @@
 <section id="home" class="carousel-section-wrapper">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-section carousel-item active clip-bg pt-100 pb-100 img-bg"
-                style="background-image: url({{ asset('assets/img/slide-bg.png') }});">
+            <div class="carousel-section carousel-item active clip-bg pt-100 pb-100 img-bg" style="background-image: url({{ asset('assets/img/slide-bg.png') }});">
+                <div class="container">
                     <div class="row">
                         <div class="col-xl-8 col-lg-10 mx-auto wow fadeInLeft">
                             <div class="carousel-content">
@@ -21,6 +21,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
