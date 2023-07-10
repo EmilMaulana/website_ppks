@@ -42,8 +42,8 @@
         <!-- preloader end -->
 
         <!-- ========================= header start ========================= -->
-        <header class="header navbar-area bg-white ">
-            <nav class="navbar navbar-expand-lg color-1">
+        {{-- <header class="header navbar-area bg-white "> --}}
+            <nav class="navbar navbar-expand-lg color-1 fixed-top">
                 <div class="container ">
                     <a class="navbar-brand" href="/">
                         <img src="{{ asset('assets/img/main-logo.png') }}" alt="Logo" width="50px">
@@ -58,12 +58,12 @@
 
                     <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                         <ul id="nav" class="navbar-nav m-auto ">
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="page-scroll text-white" href="#home">Beranda</a>
                             </li>
                             <li class="nav-item">
                                 <a class="page-scroll text-white" href="#portfolio">Lapor</a>
-                            </li>
+                            </li> --}}
                         </ul>
                         <div class="navbar-nav ">
                             <form action="{{ route('logout') }}" method="post" class="">
@@ -76,10 +76,49 @@
                 </div> <!-- container -->
             </nav> <!-- navbar -->
         
-        </header>
+        {{-- </header> --}}
+
+        <!-- File blade.php -->
+
+        <!-- Tombol toggle sidebar untuk tampilan kecil -->
+        <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+            Toggle Sidebar
+        </button>
+
+        <!-- Kontainer utama sidebar -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-3">
+                <div class="sidebar  d-none d-md-block offcanvas offcanvas-start" id="sidebar">
+                    <div class="card ml-2 shadow color-1" style="border-radius: 20px;">
+                        <div class="card-body rounded-4 ">
+                            <div class=" text-center">
+                                {{-- <h2>Sidebar</h2> --}}
+                                <ul>
+                                    <li class="nav-item-2 mb-2">
+                                        <a href="/home/profile" class="nav-link text-white fw-bolder">Informasi Pribadi</a>
+                                    </li>
+                                    <li class="nav-item-2 mb-2">
+                                        <a href="#" class="nav-link text-white fw-bold">Menu 2</a>
+                                    </li>
+                                    <li class="nav-item-2 mb-2">
+                                        <a href="#" class="nav-link text-white fw-bold">Menu 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                @yield('content')
+            </div>
+        </div>
+        
+        
+
         <!-- ========================= header end ========================= -->
 
-        @yield('content')
+        
         
         <!-- ========================= subscribe-section end ========================= -->
 

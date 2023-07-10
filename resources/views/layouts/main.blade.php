@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
 		<!-- ========================= CSS here ========================= -->
+        <script src="https://kit.fontawesome.com/f1ecbb1f89.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="{{ asset('assets/fancy/css/bootstrap-5.0.0-alpha.min.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/fancy/css/LineIcons.2.0.css') }}">
 		<link rel="stylesheet" href="{{ asset('assets/fancy/css/animate.css') }}">
@@ -42,7 +43,7 @@
         <!-- preloader end -->
 
         <!-- ========================= header start ========================= -->
-        <header class="header navbar-area bg-white ">
+        {{-- <header class="header navbar-area bg-white "> --}}
             <nav class="navbar navbar-expand-lg color-1">
                 <div class="container ">
                     <a class="navbar-brand" href="/">
@@ -59,31 +60,36 @@
                     <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                         <ul id="nav" class="navbar-nav m-auto ">
                             <li class="nav-item">
-                                <a class="page-scroll text-white" href="#home">Beranda</a>
+                                <a class=" text-white" href="/#home">Beranda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="page-scroll text-white" href="#about">Profil</a>
+                                <a class=" text-white" href="/#about">Profil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="page-scroll text-white" href="#services">Program</a>
+                                <a class=" text-white" href="/#services">Program</a>
                             </li>
                             <li class="nav-item">
-                                <a class="page-scroll text-white" href="#portfolio">Lapor</a>
+                                <a class=" text-white" href="/lapor">Lapor</a>
                             </li>
                         </ul>
                         <div class="navbar-nav ">
-                            <li class="nav-item">
-                                <a class=" text-white" href="{{ route('register') }}">Sign in</a>
+                            @auth
+                            <li class="">
+                                <a class="btn btn-primary text-white" href="/home">Dashboard</a>
                             </li>
-                            <li class="nav-item">
-                                <a class=" text-white" href="{{ route('login') }}">Sign Up</a>
+                            
+                            @else
+                            <li class="">
+                                <a class="btn btn-danger text-white" href="{{ route('login') }}">Sign Up</a>
                             </li>
+                            @endauth
+                            
                         </div>
                     </div> 
                 </div> <!-- container -->
             </nav> <!-- navbar -->
         
-        </header>
+        {{-- </header> --}}
         <!-- ========================= header end ========================= -->
 
         @yield('content')

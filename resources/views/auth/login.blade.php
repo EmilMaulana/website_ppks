@@ -4,6 +4,12 @@
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-5">
+            @if(Session::has('message'))
+                <div class="alert alert fade show my-5" role="alert" style="color: #800000; background-color: #ffffff">
+                    {{ Session::get('message') }}
+                    {{-- <button type="button" class="btn-close text-white"></button> --}}
+                </div>
+            @endif
             <div class="card mt-5 shadow rounded-4 border-0" style="border-radius: 20px">
                 <div class="card-header text-center color-1">{{ __('') }}
                     <a href="/"><img src="{{ asset('assets/img/satgas-ppks.png') }}" alt="" style="width: 150px"></a>
@@ -59,7 +65,8 @@
                                 <button type="submit" class="btn btn color-1 text-white py-2 br">
                                     {{ __('Sign up') }}
                                 </button>
-                                {{-- <small class="text-center my-3">Or sign up with</small>
+                                <small class="text-center my-3">Belum punya akun ? <a href="{{ route('register') }}">Daftar</a></small>
+                                {{-- 
                                 <a href="{{ route('login') }}" class="btn btn color-1 text-white py-2 br"><i class="fa-brands fa-google"></i> Sign up with Google</a> --}}
                                 {{-- <a href="{{ route('login.google') }}" class="btn btn-success text-white py-2 br"><i class="fa-brands fa-google"></i> Sign up with Google</a> --}}
                                 

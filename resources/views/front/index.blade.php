@@ -27,52 +27,33 @@
     </div>
 </section>
 <section id="about" class="">
-    <div class="about-section color-3">
+    <div class="about-section bg-white">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="about-img-wrapper">
-                        <div class="about-img position-relative d-inline-block wow fadeInLeft" data-wow-delay=".3s">
-                            <img src="{{ asset('assets/img/image-36.png') }}" class="img-fluid rounded-end" alt="">
-
-                            <div class="about-experience color-1">
-                                <h3>5 Year Of Working Experience</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia soluta blanditiis quas itaque necessitatibus!</p>
-                            </div>
+                <div class="col-md-4">
+                @foreach ($posts as $post)
+                <a href="/artikel/{{ $post->title }}" class="text-decoration-none">
+                    <div class="card mt-2 shadow rounded-3">
+                        <div class="card-header text-end">
+                            <small class="text-secondary">{{ $post->created_at->isoFormat('dddd, D MMMM Y') }}</small>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="about-content-wrapper">
-                        <div class="section-title">
-                            {{-- <span class="wow fadeInUp" data-wow-delay=".2s">About Us</span> --}}
-                            <h3 class="mb-40 wow fadeInRight" data-wow-delay=".4s">Tentang Kami</h3>
-                        </div>
-                        <div class="about-content">
-                            <p class="mb-45 wow fadeInUp" data-wow-delay=".6s">Kami adalah tim yang berkomitmen untuk melindungi dan memperjuangkan hak-hak individu dalam lingkungan kampus. Tujuan utama kami adalah menciptakan lingkungan kampus yang aman, inklusif, dan bebas dari kekerasan seksual.
-
-                                Kami menyediakan dukungan, bimbingan, dan advokasi bagi korban kekerasan seksual di Universitas Singaperbangsa Karawang. Melalui pendidikan, pelatihan, dan kesadaran, kami bekerja untuk mencegah kekerasan seksual dan mengubah budaya kampus menjadi lebih responsif dan mendukung.
-                                
-                                Kami melakukan riset dan berperan sebagai suara bagi korban kekerasan seksual, mendorong perubahan kebijakan yang lebih baik dan perubahan sosial yang positif.
-                                
-                                Bergabunglah dengan kami dalam membangun lingkungan kampus yang aman, bebas dari kekerasan seksual, dan mendukung hak-hak individu. Bersama-sama, kita bisa menciptakan perubahan yang bermakna.
-                                
-                                Terima kasih atas kunjungan Anda di website kami.
-                                </p>
-                            <div class="counter-up wow fadeInUp" data-wow-delay=".5s">
-                                {{-- <div class="counter">
-                                    <span id="secondo" class="countup count color-1" cup-end="30" cup-append="k">10</span>
-                                    <h4>Happy Client</h4>
-                                    <p>We Crafted an awesome design <br class="d-none d-md-block d-lg-none d-xl-block"> library that is robust and</p>
+                        <div class="card-body">
+                            <img src="{{ asset('storage/' . $post->image) }}" class="card-img-top mt-3" alt="{{ $post->title }}" class="img-fluid">
+                            <h6 class="card-text fw-bold text-dark">{{ $post->title }}</h6>
+                            <hr>
+                            <div class="row">
+                                {{-- <div class="col-md-10">
+                                    <h6 class="badge bg-danger text-white"></h6>
                                 </div>
-                                <div class="counter">
-                                    <span id="secondo" class="countup count color-2" cup-end="42" cup-append="k">5</span>
-                                    <h4>Project Done</h4>
-                                    <p>We Crafted an awesome design <br class="d-none d-md-block d-lg-none d-xl-block"> library that is robust and</p>
+                                <div class="col-md-2 ms-auto">
+                                    <small class="text-secondary"><i class="fa-solid fa-eye"></i> {{ date('nj', strtotime($post->created_at)) }} views</small>
                                 </div> --}}
                             </div>
                         </div>
                     </div>
+                </a>
+                @endforeach
+                    
                 </div>
             </div>
         </div>
@@ -86,8 +67,8 @@
                 <div class="section-title text-center mb-55">
                     {{-- <span class="wow fadeInDown" data-wow-delay=".2s">Services</span> --}}
                     <h2 class="wow fadeInUp" data-wow-delay=".4s">Program Unggulan</h2>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">At vero eos et accusamus et iusto odio
-                        dignissimos ducimus quiblanditiis praesentium</p>
+                    {{-- <p class="wow fadeInUp" data-wow-delay=".6s">At vero eos et accusamus et iusto odio
+                        dignissimos ducimus quiblanditiis praesentium</p> --}}
                 </div>
             </div>
         </div>
@@ -176,7 +157,7 @@
             </div>
             <div class="col-xl-5 col-lg-5">
                 <div class="contact-btn text-left text-lg-right">
-                    <a href="https://rebrand.ly/fancy-ud" rel="nofollow" class="btn btn color-1 text-white pt-3 pb-3 pl-5 pr-5 rounded-pill">Lapor Sekarang!</a>
+                    <a href="/lapor" class="btn btn color-1 text-white pt-3 pb-3 pl-5 pr-5 rounded-pill">Lapor Sekarang!</a>
                 </div>
             </div>
         </div>

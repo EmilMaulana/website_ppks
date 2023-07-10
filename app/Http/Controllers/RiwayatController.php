@@ -2,20 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Artikel;
 use Illuminate\Http\Request;
+use App\Models\Laporan;
 
-class FrontController extends Controller
+class RiwayatController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('front.index', [
+        return view('dashboard.laporan.index', [
             "title" => "Satgas Pencegahan dan Penanganan Kekerasan Seksual Universitas Singaperbangsa Karawang",
-            "active" => "home",
-            'posts' => Artikel::latest()->get()
+            'riwayats' => Laporan::where('user_id', auth()->user()->id)->paginate(10)
         ]);
     }
 

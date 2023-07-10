@@ -13,9 +13,9 @@
                         @csrf
                         <div class="row justify-content-center">
                             <div class="col-md-11 mb-3">
-                                <label for="nama" class="form-label">{{ __('Username') }}</label>
-                                <input id="nama" type="username" class="form-control br @error('nama') is-invalid @enderror" name="nama" value="{{ old('nama') }}" required autocomplete="nama" autofocus>
-                                @error('nama')
+                                <label for="name" class="form-label">{{ __('Username') }}</label>
+                                <input id="name" type="username" class="form-control br @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

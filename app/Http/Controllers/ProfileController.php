@@ -2,20 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Artikel;
 use Illuminate\Http\Request;
 
-class FrontController extends Controller
+class ProfileController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('front.index', [
+        return view('dashboard.profile.index', [
             "title" => "Satgas Pencegahan dan Penanganan Kekerasan Seksual Universitas Singaperbangsa Karawang",
-            "active" => "home",
-            'posts' => Artikel::latest()->get()
+            "active" => "home"
         ]);
     }
 
